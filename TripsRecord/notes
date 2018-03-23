@@ -1,0 +1,10 @@
+enabling location in android and ios
+1. for ios add this line of code Xamarin.FormsMaps.Init();
+2. for android add this line of code global::Xamarin.Forms.Forms.Init(this, bundle);
+3. for ios navigate to info.plist and right click select open with then Generic PList Editor then click OK
+    and navigate to end click the add sign to add a property then select Location When in use usage description and in the right side 
+    type in "We need access to your location to improve the experience" and then click save.
+4. for android enabling the location select the andriod side on solution explorer and right click then select the properties, select the Andriod Manifest tab
+    navigate down to the page and under permissions check the ACCESS_COARSE_LOCATION,FINE_LOCATION,LOCATION_EXTRA_COMMANDS,MOCK_LOCATION,NETWORK_STATE
+    WIFI_STATE,INTERNET
+5. go to console.developer.google.com find credentials (left side menu) then create and copy the API
